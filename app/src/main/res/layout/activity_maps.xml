@@ -1,0 +1,124 @@
+
+<LinearLayout
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/map" tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="90" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/lin_debug_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/text_lng"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/text_lat"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_in_area"
+            android:textSize="14dp"
+            android:text="Uninit." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:longClickable="false"
+        android:background="#76562727"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="0dp">
+
+        <ImageButton
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_left"
+            android:src="@drawable/ic_action_name2"
+            android:background="@drawable/btn_b_red"
+            android:clickable="true"
+            android:layout_weight="20"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/ic_action_name3"
+            android:background="@android:color/holo_orange_light"
+            android:clickable="true"
+            android:layout_weight="20"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_camera"
+            android:src="@drawable/ic_action_name"
+            android:background="@drawable/btn_b_blue"
+            android:layout_column="2"
+            android:clickable="true"
+            android:layout_weight="20"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_gallery"
+            android:src="@drawable/ic_action_name3"
+            android:background="@drawable/btn_b_green"
+            android:clickable="true"
+            android:layout_weight="20"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_right"
+            android:src="@drawable/ic_action_forward"
+            android:background="@drawable/btn_b_red"
+            android:clickable="true"
+            android:layout_weight="20"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

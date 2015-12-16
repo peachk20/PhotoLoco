@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="MAP_ZOOM">15</integer>
+    <integer name="MAP_BEARING">270</integer>
+    <integer name="MAP_TILT">70</integer>
+</resources>

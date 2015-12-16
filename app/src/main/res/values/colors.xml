@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="dark_bg">#ff312e31</color>
+    <color name="punch_hole">#FF423F42</color>
+    <color name="node_name_list">#FFFFFFFF</color>
+
+</resources>
